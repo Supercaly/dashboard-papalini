@@ -1,0 +1,80 @@
+[
+    {
+        "id": "uffici",
+        "name": "Uffici - P2",
+        "icon": "briefcase",
+        "temperature": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=14",
+        "humidity": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=23",
+        "ufcSmall": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=13",
+        "tvocSmall": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=17",
+        "co2": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=10",
+        "ufc": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=19",
+        "pm": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=7",
+        "tvoc": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=8"
+    },
+    {
+        "id": "palestra",
+        "name": "Palestra - P2",
+        "icon": "dribbble",
+        "temperature": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=22",
+        "humidity": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=15",
+        "ufcSmall": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=24",
+        "tvocSmall": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=25",
+        "co2": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=18",
+        "ufc": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=5",
+        "pm": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=20",
+        "tvoc": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=21"
+    },
+    {
+        "id": "soggiorno",
+        "name": "Soggiorno - P2",
+        "icon": "tv",
+        "temperature": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=31",
+        "humidity": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=33",
+        "ufcSmall": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=32",
+        "tvocSmall": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=34",
+        "co2": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=29",
+        "ufc": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=30",
+        "pm": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=44",
+        "tvoc": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=27"
+    },
+    {
+        "id": "salapranzo",
+        "name": "Sala da Pranzo - P3",
+        "icon": "coffee",
+        "temperature": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=40",
+        "humidity": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=42",
+        "ufcSmall": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=41",
+        "tvocSmall": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=43",
+        "co2": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=38",
+        "ufc": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=39",
+        "pm": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=28",
+        "tvoc": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=45"
+    },
+    {
+        "id": "fisioterapia",
+        "name": "Fisioterapia - P3",
+        "icon": "at-sign",
+        "temperature": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=50",
+        "humidity": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=52",
+        "ufcSmall": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=51",
+        "tvocSmall": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=53",
+        "co2": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=46",
+        "ufc": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=47",
+        "pm": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=48",
+        "tvoc": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=49"
+    },
+    {
+        "id": "soggiorno2",
+        "name": "Soggiorno - P3",
+        "icon": "tv",
+        "temperature": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=56",
+        "humidity": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=59",
+        "ufcSmall": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=58",
+        "tvocSmall": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=57",
+        "co2": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=54",
+        "ufc": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=55",
+        "pm": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=60",
+        "tvoc": "http://graf.calisti.ddnsfree.com/d-solo/eetlwngqfuosgc/dashboard-merano?orgId=1&timezone=browser&panelId=61"
+    }
+]

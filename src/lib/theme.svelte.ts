@@ -1,0 +1,1 @@
+export const theme = $state<Theme>({ value: 'light' });

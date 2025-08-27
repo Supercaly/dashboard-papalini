@@ -1,0 +1,129 @@
+@use "@fontsource/roboto";
+
+:root {
+    // Font
+    --font-brand: 'Roboto', serif;
+    --font-plain: 'Roboto', sans-serif;
+    // Font weights
+    --font-weight-thin: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semi-bold: 600;
+}
+
+body,
+html {
+    font-family: var(--font-plain);
+    font-size: 16px;
+
+    color: var(--color-primary);
+    background: var(--color-surface);
+
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: var(--font-plain);
+    font-weight: var(--font-weight-regular);
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    color: red;
+}
+
+
+.display-large {
+    font-family: var(--font-brand);
+    font-weight: var(--font-weight-regular);
+    font-size: 57px;
+}
+
+.display-medium {
+    font-family: var(--font-brand);
+    font-weight: var(--font-weight-regular);
+    font-size: 30px;
+}
+
+.display-small {
+    font-family: var(--font-brand);
+    font-weight: var(--font-weight-regular);
+    font-size: 22px;//36px;
+}
+.headline-large {
+    font-family: var(--font-brand);
+    font-weight: var(--font-weight-regular);
+    font-size: 32px;
+}
+
+.headline-medium {
+    font-family: var(--font-brand);
+    font-weight: var(--font-weight-regular);
+    font-size: 28px;
+}
+
+.headline-small {
+    font-family: var(--font-brand);
+    font-weight: var(--font-weight-regular);
+    font-size: 24px;
+}
+.body-large {
+    font-family: var(--font-plain);
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+}
+
+.body-medium {
+    font-family: var(--font-plain);
+    font-weight: var(--font-weight-regular);
+    font-size: 14px;
+}
+
+.body-small {
+    font-family: var(--font-plain);
+    font-weight: var(--font-weight-regular);
+    font-size: 12px;
+}
+.label-large {
+    font-family: var(--font-plain);
+    font-weight: var(--font-weight-medium);
+    font-size: 14px;
+}
+
+.label-medium {
+    font-family: var(--font-plain);
+    font-weight: var(--font-weight-medium);
+    font-size: 12px;
+}
+
+.label-small {
+    font-family: var(--font-plain);
+    font-weight: var(--font-weight-medium);
+    font-size: 11px;
+}
+.title-large {
+    font-family: var(--font-plain);
+    font-weight: var(--font-weight-regular);
+    font-size: 22px;
+}
+
+.title-medium {
+    font-family: var(--font-plain);
+    font-weight: var(--font-weight-medium);
+    font-size: 14px;
+}
+
+.title-small {
+    font-family: var(--font-plain);
+    font-weight: var(--font-weight-medium);
+    font-size: 14px;
+}
