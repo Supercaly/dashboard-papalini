@@ -1,12 +1,11 @@
 <script lang="ts">
-	import { writable } from 'svelte/store';
 	import '../app.scss';
 	import Navbar from '../lib/components/Navbar.svelte';
 	import { theme } from '$lib/theme.svelte';
 
 	let { children } = $props();
 
-	$inspect('current theme set to ', theme.value);
+	$inspect(`+layout: Current theme set to '${theme.value}'`);
 </script>
 
 <svelte:head>

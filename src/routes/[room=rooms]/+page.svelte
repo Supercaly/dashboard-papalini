@@ -1,31 +1,40 @@
 <script lang="ts">
-	import Card from '$lib/components/Card.svelte';
 	import { page } from '$app/state';
+	import Card from '$lib/components/Card.svelte';
+	import DatePicker from '$lib/components/DatePicker.svelte';
 	import panels from '$lib/config/panels.json';
 
-	const panel = panels.find((e) => e.id == page.params.room)!!;
-	
-	$inspect(page.params.room);
+	const panel = panels.rooms.find((e) => e.id == page.params.room)!!;
+
+	let plotDate = $state(new Date());
+
+	$inspect(`rooms: room=${page.params.room}`);
+	$inspect(`room: date=${plotDate.toISOString()}`);
 </script>
 
 <div class="content">
+	<div class="datepicker">
+		<DatePicker bind:date={plotDate} />
+	</div>
 	<div class="top-card">
-		<Card panelUrl={panel.temperature} />
-		<Card panelUrl={panel.humidity} />
-		<Card panelUrl={panel.ufcSmall} />
+		<div class="elements">
+			<Card currentDate={plotDate} panelID={panel.temperature} />
+			<Card currentDate={plotDate} panelID={panel.humidity} />
+			<Card currentDate={plotDate} panelID={panel.ufcSmall} />
+		</div>
 	</div>
 	<div class="bottom-card">
 		<div class="card-container">
-			<Card panelUrl={panel.ufc} />
+			<Card currentDate={plotDate} panelID={panel.ufc} />
 		</div>
 		<div class="card-container">
-			<Card panelUrl={panel.co2} />
+			<Card currentDate={plotDate} panelID={panel.co2} />
 		</div>
 		<div class="card-container">
-			<Card panelUrl={panel.pm} />
+			<Card currentDate={plotDate} panelID={panel.pm} />
 		</div>
 		<div class="card-container">
-			<Card panelUrl={panel.tvoc} />
+			<Card currentDate={plotDate} panelID={panel.tvoc} />
 		</div>
 	</div>
 </div>
@@ -38,15 +47,29 @@
 		gap: 16px;
 	}
 
+	.datepicker {
+		display: flex;
+		flex-direction: column;
+		background: var(--color-surface-container);
+		border-radius: 24px;
+		padding: 24px;
+	}
+
 	.top-card {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		flex-direction: row;
-		gap: 20px;
+		display: flex;
+		flex-direction: column;
 
 		background: var(--color-surface-container);
 		border-radius: 24px;
 		padding: 24px;
+		gap: 10px;
+
+		.elements {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			flex-direction: row;
+			gap: 20px;
+		}
 	}
 
 	.bottom-card {

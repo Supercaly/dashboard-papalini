@@ -1,10 +1,31 @@
 <script lang="ts">
 	import { theme } from '$lib/theme.svelte';
+	import panels from '$lib/config/panels.json';
 
 	interface Props {
-		panelUrl: string;
+		panelID: string;
+		currentDate?: Date;
 	}
-	let { panelUrl }: Props = $props();
+	const { panelID, currentDate = new Date() }: Props = $props();
+	const panelUrl = $derived.by(() => {
+		const fromDate = new Date(currentDate);
+		fromDate.setHours(0, 0, 0, 0);
+		const toDate = new Date(currentDate);
+		toDate.setHours(23, 59, 59, 999);
+
+		const query = [
+			'orgId=1',
+			'timezone=browser',
+			`theme=${theme.value}`,
+			`from=${fromDate.toISOString()}`,
+			`to=${toDate.toISOString()}`,
+			`panelId=${panelID}`
+		].join('&');
+		return `${panels.baseurl}?${query}`;
+	});
+	
+	$inspect(`card: panel url=${panelUrl}`);
+	$inspect(`card: current date=${currentDate.toISOString()}`);
 </script>
 
 <div class="container {theme.value}">
@@ -13,7 +34,7 @@
 			class="grafana-frame"
 			title="Grafana frame"
 			frameborder="0"
-			src={panelUrl + '&theme=' + theme.value}
+			src={panelUrl}
 		></iframe>
 		<!-- src="http://localhost:3000/d-solo/fef0ktu3gcnwgc/new-dashboard?orgId=1&timezone=browser&theme=light&panelId={panelId}" -->
 	</div>
@@ -26,7 +47,6 @@
 		height: 100%;
 
 		border-radius: 24px;
-
 	}
 
 	.light {

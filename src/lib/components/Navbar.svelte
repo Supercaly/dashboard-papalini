@@ -23,7 +23,7 @@
 					<p class="nav-text title-medium">Home</p>
 				</a>
 			</li>
-			{#each panels as room}
+			{#each panels.rooms as room}
 				<li aria-current={page.url.pathname === '/' + room.id ? 'page' : undefined}>
 					<a class="nav-item" href="/{room.id}" target="_self">
 						<div class="nav-notch"><Notch /></div>
@@ -129,7 +129,7 @@
 				}
 				.nav-notch {
 					width: 10px;
-					height: 42px;//48px;
+					height: 42px; //48px;
 					color: var(--color-primary);
 					opacity: 0;
 				}
@@ -139,21 +139,13 @@
 					flex-direction: column;
 					align-items: center;
 					justify-content: center;
-					width: 32px;//48px;
-					height: 24px;//48px;
+					width: 32px; //48px;
+					height: 24px; //48px;
 					color: var(--color-on-surface-variant);
 				}
 
 				.nav-text {
 					color: var(--color-on-surface-variant);
-				}
-
-				button {
-					background: none;
-					border: none;
-					cursor: pointer;
-					width: 100%;
-					padding: 0;
 				}
 			}
 		}
@@ -177,11 +169,11 @@
 		.logos {
 			display: flex;
 			flex-direction: row;
-			gap: 6px;//12px;
+			gap: 6px; //12px;
 			flex-wrap: wrap;
 			justify-content: center;
 
-			padding: 16px;//24px 20px;
+			padding: 16px; //24px 20px;
 			background: var(--color-surface);
 			border-radius: 24px;
 		}

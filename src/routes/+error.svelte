@@ -1,6 +1,6 @@
 <div class="content">
-	<p class="title headline-large">Ops... The page you're looking for does not exist!</p>
-	<a href="/" class="title-medium">Go back home!</a>
+	<p class="title headline-large">Ops... La pagina che stai cercando non esiste!</p>
+	<a href="/" class="title-medium">Torna alla home!</a>
 </div>
 
 <style lang="scss">

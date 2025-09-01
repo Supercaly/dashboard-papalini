@@ -1,21 +1,9 @@
 <script lang="ts">
-	import Card from './Card.svelte';
-
-	interface Panel {
-		id: string;
-        name: string;
-        temperature: string;
-        humidity: string;
-        ufcSmall: string;
-        tvocSmall: string;
-        co2: string;
-        ufc: string;
-        pm: string;
-        tvoc: string;
-	}
+	import Card from '$lib/components/Card.svelte';
+	import type { Room } from '$lib/room';
 
 	interface Props {
-		room: Panel;
+		room: Room;
 	}
 
 	const { room }: Props = $props();
@@ -25,19 +13,19 @@
 	<p class="title display-small">{room.name}</p>
 	<div class="content">
 		<div class="card-container">
-			<Card panelUrl={room.temperature}/>
+			<Card panelID={room.temperature}/>
 		</div>
 		<div class="card-container">
-			<Card panelUrl={room.humidity}/>
+			<Card panelID={room.humidity}/>
 		</div>
 		<div class="card-container">
-			<Card panelUrl={room.ufcSmall}/>
+			<Card panelID={room.ufcSmall}/>
 		</div>
 		<div class="card-container">
-			<Card panelUrl={room.tvocSmall}/>
+			<Card panelID={room.tvocSmall}/>
 		</div>
 		<div class="card-container big">
-			<Card panelUrl={room.co2}/>
+			<Card panelID={room.co2}/>
 		</div>
 	</div>
 </div>
