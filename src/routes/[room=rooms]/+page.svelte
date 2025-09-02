@@ -2,12 +2,13 @@
 	import { page } from '$app/state';
 	import Card from '$lib/components/Card.svelte';
 	import DatePicker from '$lib/components/DatePicker.svelte';
-	import panels from '$lib/config/panels.json';
 
-	const panel = panels.rooms.find((e) => e.id == page.params.room)!!;
+	const { data } = $props();
+	const panel = $derived(data.rooms.find((e) => e.id == page.params.room)!!);
 
 	let plotDate = $state(new Date());
 
+	$inspect(panel);
 	$inspect(`rooms: room=${page.params.room}`);
 	$inspect(`room: date=${plotDate.toISOString()}`);
 </script>
@@ -18,23 +19,23 @@
 	</div>
 	<div class="top-card">
 		<div class="elements">
-			<Card currentDate={plotDate} panelID={panel.temperature} />
-			<Card currentDate={plotDate} panelID={panel.humidity} />
-			<Card currentDate={plotDate} panelID={panel.ufcSmall} />
+			<Card currentDate={plotDate} baseUrl={data.baseUrl} panelID={panel.temperature} />
+			<Card currentDate={plotDate} baseUrl={data.baseUrl} panelID={panel.humidity} />
+			<Card currentDate={plotDate} baseUrl={data.baseUrl} panelID={panel.ufcSmall} />
 		</div>
 	</div>
 	<div class="bottom-card">
 		<div class="card-container">
-			<Card currentDate={plotDate} panelID={panel.ufc} />
+			<Card currentDate={plotDate} baseUrl={data.baseUrl} panelID={panel.ufc} />
 		</div>
 		<div class="card-container">
-			<Card currentDate={plotDate} panelID={panel.co2} />
+			<Card currentDate={plotDate} baseUrl={data.baseUrl} panelID={panel.co2} />
 		</div>
 		<div class="card-container">
-			<Card currentDate={plotDate} panelID={panel.pm} />
+			<Card currentDate={plotDate} baseUrl={data.baseUrl} panelID={panel.pm} />
 		</div>
 		<div class="card-container">
-			<Card currentDate={plotDate} panelID={panel.tvoc} />
+			<Card currentDate={plotDate} baseUrl={data.baseUrl} panelID={panel.tvoc} />
 		</div>
 	</div>
 </div>

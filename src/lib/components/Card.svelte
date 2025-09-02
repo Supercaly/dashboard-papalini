@@ -1,12 +1,12 @@
 <script lang="ts">
 	import { theme } from '$lib/theme.svelte';
-	import panels from '$lib/config/panels.json';
 
 	interface Props {
+		baseUrl: string;
 		panelID: string;
 		currentDate?: Date;
 	}
-	const { panelID, currentDate = new Date() }: Props = $props();
+	const { baseUrl, panelID, currentDate = new Date() }: Props = $props();
 	const panelUrl = $derived.by(() => {
 		const fromDate = new Date(currentDate);
 		fromDate.setHours(0, 0, 0, 0);
@@ -21,7 +21,7 @@
 			`to=${toDate.toISOString()}`,
 			`panelId=${panelID}`
 		].join('&');
-		return `${panels.baseurl}?${query}`;
+		return `${baseUrl}?${query}`;
 	});
 	
 	$inspect(`card: panel url=${panelUrl}`);

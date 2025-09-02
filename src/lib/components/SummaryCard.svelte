@@ -3,29 +3,30 @@
 	import type { Room } from '$lib/room';
 
 	interface Props {
+		baseUrl: string;
 		room: Room;
 	}
 
-	const { room }: Props = $props();
+	const { baseUrl, room }: Props = $props();
 </script>
 
 <div class="card">
 	<p class="title display-small">{room.name}</p>
 	<div class="content">
 		<div class="card-container">
-			<Card panelID={room.temperature}/>
+			<Card baseUrl={baseUrl} panelID={room.temperature}/>
 		</div>
 		<div class="card-container">
-			<Card panelID={room.humidity}/>
+			<Card baseUrl={baseUrl} panelID={room.humidity}/>
 		</div>
 		<div class="card-container">
-			<Card panelID={room.ufcSmall}/>
+			<Card baseUrl={baseUrl} panelID={room.ufcSmall}/>
 		</div>
 		<div class="card-container">
-			<Card panelID={room.tvocSmall}/>
+			<Card baseUrl={baseUrl} panelID={room.tvocSmall}/>
 		</div>
 		<div class="card-container big">
-			<Card panelID={room.co2}/>
+			<Card baseUrl={baseUrl} panelID={room.co2}/>
 		</div>
 	</div>
 </div>

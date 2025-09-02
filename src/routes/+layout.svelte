@@ -2,9 +2,11 @@
 	import '../app.scss';
 	import Navbar from '../lib/components/Navbar.svelte';
 	import { theme } from '$lib/theme.svelte';
+	import type { LayoutProps } from './$types';
 
-	let { children } = $props();
-
+	let { data, children }: LayoutProps = $props();
+	
+	// $inspect(data);
 	$inspect(`+layout: Current theme set to '${theme.value}'`);
 </script>
 
@@ -14,7 +16,7 @@
 
 <div class="app">
 	<aside>
-		<Navbar />
+		<Navbar rooms={data.rooms}/>
 	</aside>
 	<main>{@render children()}</main>
 </div>

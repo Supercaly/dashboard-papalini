@@ -1,6 +1,7 @@
 export interface Room {
     id: string;
     name: string;
+    icon: string;
     temperature: string;
     humidity: string;
     ufcSmall: string;

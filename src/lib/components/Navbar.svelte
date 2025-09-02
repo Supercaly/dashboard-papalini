@@ -3,9 +3,14 @@
 	import { page } from '$app/state';
 	import AppLogo from '$lib/assets/extra/logo.svg?component';
 	import Notch from '$lib/assets/extra/notch.svg?component';
-	import panels from '$lib/config/panels.json';
 	import ThemeSwitch from './ThemeSwitch.svelte';
 	import { theme } from '$lib/theme.svelte';
+	import type { Room } from '$lib/room';
+
+	interface Props {
+		rooms: Room[];
+	}
+	const { rooms }: Props = $props();
 </script>
 
 <div class="navbar">
@@ -23,7 +28,7 @@
 					<p class="nav-text title-medium">Home</p>
 				</a>
 			</li>
-			{#each panels.rooms as room}
+			{#each rooms as room}
 				<li aria-current={page.url.pathname === '/' + room.id ? 'page' : undefined}>
 					<a class="nav-item" href="/{room.id}" target="_self">
 						<div class="nav-notch"><Notch /></div>
